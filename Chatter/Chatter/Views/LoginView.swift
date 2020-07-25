@@ -32,6 +32,7 @@ class LoginView: UIView {
         addSubview(usernameFieldLabel)
         addSubview(passwordFieldLabel)
         addSubview(loginButton)
+        addSubview(registerButton)
     }
     let logoImageView: UIImageView = {
         let imageView = UIImageView()
@@ -64,7 +65,7 @@ class LoginView: UIView {
     
     let backgroundImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "book")
+        imageView.image = UIImage(named: "chat")
         
         
         return imageView
@@ -124,5 +125,13 @@ class LoginView: UIView {
         return button
     }()
     
+    let registerButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = .clear
+        let buttonText = NSMutableAttributedString(attributedString: NSAttributedString(string: "Register", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20), .foregroundColor: UIColor.systemBlue]))
+        button.setAttributedTitle(buttonText, for: .normal)
+        
+        return button
+    }()
 
 }

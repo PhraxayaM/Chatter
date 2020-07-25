@@ -41,7 +41,7 @@ extension LoginView {
         // Username Field Constraints
         
         usernameField.translatesAutoresizingMaskIntoConstraints = false
-        usernameField.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 305).isActive = true
+        usernameField.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 315).isActive = true
         usernameField.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
         usernameField.widthAnchor.constraint(equalTo: safeAreaLayoutGuide.widthAnchor, multiplier: 0.5).isActive = true
         usernameField.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.04).isActive = true
@@ -76,9 +76,17 @@ extension LoginView {
         
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         loginButton.topAnchor.constraint(equalTo: passwordField.bottomAnchor, constant: 25).isActive = true
-        loginButton.centerXAnchor.constraint(equalTo: passwordField.centerXAnchor).isActive = true
+//        loginButton.centerXAnchor.constraint(equalTo: passwordField.centerXAnchor).isActive = true
+        loginButton.leftAnchor.constraint(equalTo: passwordField.leftAnchor, constant: -20).isActive = true
         loginButton.widthAnchor.constraint(equalTo: passwordField.widthAnchor, multiplier: 0.5).isActive = true
         loginButton.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.05).isActive = true
+        
+        registerButton.translatesAutoresizingMaskIntoConstraints = false
+        registerButton.topAnchor.constraint(equalTo: loginButton.topAnchor, constant: 0).isActive = true
+        registerButton.leftAnchor.constraint(equalTo: loginButton.rightAnchor, constant: 30).isActive = true
+//        registerButton.centerXAnchor.constraint(equalTo: passwordField.centerXAnchor).isActive = true
+        registerButton.widthAnchor.constraint(equalTo: passwordField.widthAnchor, multiplier: 0.5).isActive = true
+        registerButton.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.05).isActive = true
     }
     
     

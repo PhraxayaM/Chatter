@@ -35,6 +35,7 @@ class LoginVC: UIViewController{
         
         func setup() {
             setupView()
+            addButtonTarget()
         }
         
         func setupView() {
@@ -43,7 +44,20 @@ class LoginVC: UIViewController{
             self.view.addSubview(loginView)
             
         }
-
+    
+    func addButtonTarget() {
+        loginView.loginButton.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
+        
+        loginView.registerButton.addTarget(self, action: #selector(registerTapped), for: .touchUpInside)
+    }
+    @objc func loginTapped() {
+    print("login tapped")
+    view.endEditing(true)
+    }
+    @objc func registerTapped() {
+    print("register tapped")
+    view.endEditing(true)
+    }
 
 }
 
