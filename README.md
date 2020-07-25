@@ -1,10 +1,11 @@
 # Chatter
+[![Swift Version][swift-image]][swift-url]
+![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 > Chatter is an iOS app made for chatting with other people online. This is a fun self made project that will be similiar to WhatsApp.
 
-[![Swift Version][swift-image]][swift-url]
-![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 
 
 ![](header.png)
@@ -25,29 +26,6 @@
 - [] Firebase storage
 - [] Custom uicollection views
 - [] Custom UITableviews
-One on one chat
-
-Group chat
-
-Multimedia messages (Photo, Video, Audio, Location)
-
-Fully end to end encryption
-
-Push Notifications
-
-Call function
-
-CallKit
-
-PushKit
-
-Firebase users Authentication
-
-Firebase storage
-
-Firebase firestore (new real time database from firebase)
-
-Phone number authentication
 
 
 
