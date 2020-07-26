@@ -20,6 +20,7 @@
 		CD148B0924CD127400DAF3A2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD148B0824CD127400DAF3A2 /* Constants.swift */; };
 		CD148B0C24CD1F9A00DAF3A2 /* HelperFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD148B0B24CD1F9A00DAF3A2 /* HelperFunction.swift */; };
 		CD148B0E24CD204300DAF3A2 /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD148B0D24CD204300DAF3A2 /* FCollectionReference.swift */; };
+		CD148B1024CDD6F600DAF3A2 /* MBProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD148B0F24CDD6F500DAF3A2 /* MBProgressHUD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		CD148B0824CD127400DAF3A2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CD148B0B24CD1F9A00DAF3A2 /* HelperFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunction.swift; sourceTree = "<group>"; };
 		CD148B0D24CD204300DAF3A2 /* FCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
+		CD148B0F24CDD6F500DAF3A2 /* MBProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProgressHUD.swift; sourceTree = "<group>"; };
 		DD3A6168D692D3A1C661C00C /* Pods-Chatter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatter.debug.xcconfig"; path = "Target Support Files/Pods-Chatter/Pods-Chatter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +155,7 @@
 			children = (
 				CD148B0B24CD1F9A00DAF3A2 /* HelperFunction.swift */,
 				CD148B0D24CD204300DAF3A2 /* FCollectionReference.swift */,
+				CD148B0F24CDD6F500DAF3A2 /* MBProgressHUD.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				CD148AE824CCA7F700DAF3A2 /* AppDelegate.swift in Sources */,
 				CD148B0224CCB59D00DAF3A2 /* LoginViewContraints.swift in Sources */,
 				CD148AFE24CCB51700DAF3A2 /* LoginView.swift in Sources */,
+				CD148B1024CDD6F600DAF3A2 /* MBProgressHUD.swift in Sources */,
 				CD148B0924CD127400DAF3A2 /* Constants.swift in Sources */,
 				CD148B0C24CD1F9A00DAF3A2 /* HelperFunction.swift in Sources */,
 				CD148AEA24CCA7F700DAF3A2 /* SceneDelegate.swift in Sources */,

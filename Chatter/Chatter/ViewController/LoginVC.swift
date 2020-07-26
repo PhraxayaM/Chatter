@@ -7,19 +7,21 @@
 //
 
 import UIKit
-
-import UIKit
+import ProgressHUD
+import MBProgressHUD
 
 
 class LoginVC: UIViewController{
-
+    fileprivate lazy var refreshIndicator: MBProgressHUD = {
+        return MBProgressHUD.refreshing(addedTo: self.view, text: "Missing Username and Password")
+    }()
 
     var loginView: LoginView!
 
         override func viewDidLoad() {
             super.viewDidLoad()
             setup()
-            
+
            
         }
     override func viewWillAppear(_ animated: Bool) {
@@ -53,10 +55,23 @@ class LoginVC: UIViewController{
     @objc func loginTapped() {
     print("login tapped")
     view.endEditing(true)
+        if loginView.usernameField.text != "" && loginView.passwordField.text != "" {
+            loginUser()
+        } else {
+            print("error")
+//            ProgressHUD.showError("Username and password is missing")
+//            self.refreshIndicator.show(animated: true)
+////            self.refreshIndicator.hide(animated: true)
+
+        }
     }
     @objc func registerTapped() {
     print("register tapped")
     view.endEditing(true)
+    }
+    
+    func loginUser() {
+        print("logging in")
     }
 
 }
