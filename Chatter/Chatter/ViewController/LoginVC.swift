@@ -12,8 +12,12 @@ import MBProgressHUD
 
 
 class LoginVC: UIViewController{
-    fileprivate lazy var refreshIndicator: MBProgressHUD = {
-        return MBProgressHUD.refreshing(addedTo: self.view, text: "Missing Username and Password")
+    fileprivate lazy var refreshIndicatorRefresh: MBProgressHUD = {
+        return MBProgressHUD.refreshing(addedTo: self.view, text: "Refreshing")
+    }()
+    
+    fileprivate lazy var refreshIndicatorLoginError: MBProgressHUD = {
+        return MBProgressHUD.loginError(addedTo: self.view, text: "Missing Username and Password")
     }()
 
     var loginView: LoginView!
@@ -60,7 +64,7 @@ class LoginVC: UIViewController{
         } else {
             print("error")
 //            ProgressHUD.showError("Username and password is missing")
-//            self.refreshIndicator.show(animated: true)
+            self.refreshIndicatorLoginError.show(animated: false)
 ////            self.refreshIndicator.hide(animated: true)
 
         }

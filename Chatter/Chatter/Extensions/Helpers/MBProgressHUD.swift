@@ -50,5 +50,8 @@ extension MBProgressHUD {
         return createHud(addedTo: view, image: UIImage(named: "chat"), text: text, rotate: true)
     }
     
+    class func loginError(addedTo view: UIView, text: String) -> MBProgressHUD {
+        return createHud(addedTo: view, image: UIImage(named: "cancel"), text: text, rotate: false)
+    }
     
 }
