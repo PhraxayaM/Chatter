@@ -43,6 +43,7 @@ You can use [CocoaPods](http://cocoapods.org/) to install
 - Type: pod init
 - Type: Open Podfile
 - Make your Podfile look like this
+- Your 'target' is the name of your xcode project. Mine is set to 'Chatter' because that's my projects name. Remember to change it to your xcode project's name
 
 ```# Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'

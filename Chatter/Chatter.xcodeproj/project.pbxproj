@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,11 @@
 		CD148AF424CCA7FC00DAF3A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD148AF224CCA7FC00DAF3A2 /* LaunchScreen.storyboard */; };
 		CD148AFE24CCB51700DAF3A2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD148AFD24CCB51700DAF3A2 /* LoginView.swift */; };
 		CD148B0224CCB59D00DAF3A2 /* LoginViewContraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD148B0124CCB59D00DAF3A2 /* LoginViewContraints.swift */; };
+		CD148B0424CD0D6D00DAF3A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD148B0324CD0D6C00DAF3A2 /* GoogleService-Info.plist */; };
+		CD148B0724CD11EC00DAF3A2 /* FirebaseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD148B0624CD11EC00DAF3A2 /* FirebaseUser.swift */; };
+		CD148B0924CD127400DAF3A2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD148B0824CD127400DAF3A2 /* Constants.swift */; };
+		CD148B0C24CD1F9A00DAF3A2 /* HelperFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD148B0B24CD1F9A00DAF3A2 /* HelperFunction.swift */; };
+		CD148B0E24CD204300DAF3A2 /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD148B0D24CD204300DAF3A2 /* FCollectionReference.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		CD148AF524CCA7FC00DAF3A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD148AFD24CCB51700DAF3A2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CD148B0124CCB59D00DAF3A2 /* LoginViewContraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewContraints.swift; sourceTree = "<group>"; };
+		CD148B0324CD0D6C00DAF3A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CD148B0624CD11EC00DAF3A2 /* FirebaseUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUser.swift; sourceTree = "<group>"; };
+		CD148B0824CD127400DAF3A2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CD148B0B24CD1F9A00DAF3A2 /* HelperFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunction.swift; sourceTree = "<group>"; };
+		CD148B0D24CD204300DAF3A2 /* FCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
 		DD3A6168D692D3A1C661C00C /* Pods-Chatter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatter.debug.xcconfig"; path = "Target Support Files/Pods-Chatter/Pods-Chatter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +60,6 @@
 				DD3A6168D692D3A1C661C00C /* Pods-Chatter.debug.xcconfig */,
 				7975C5C06B69542513105477 /* Pods-Chatter.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,6 +92,7 @@
 		CD148AE624CCA7F700DAF3A2 /* Chatter */ = {
 			isa = PBXGroup;
 			children = (
+				CD148B0524CD11DE00DAF3A2 /* Model */,
 				CD148AFF24CCB58900DAF3A2 /* Extensions */,
 				CD148AFC24CCB46200DAF3A2 /* Views */,
 				CD148AFB24CCACD000DAF3A2 /* ViewController */,
@@ -91,6 +101,7 @@
 				CD148AF024CCA7FC00DAF3A2 /* Assets.xcassets */,
 				CD148AF224CCA7FC00DAF3A2 /* LaunchScreen.storyboard */,
 				CD148AF524CCA7FC00DAF3A2 /* Info.plist */,
+				CD148B0324CD0D6C00DAF3A2 /* GoogleService-Info.plist */,
 			);
 			path = Chatter;
 			sourceTree = "<group>";
@@ -114,6 +125,7 @@
 		CD148AFF24CCB58900DAF3A2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CD148B0A24CD1F8B00DAF3A2 /* Helpers */,
 				CD148B0024CCB59100DAF3A2 /* Constraints */,
 			);
 			path = Extensions;
@@ -125,6 +137,24 @@
 				CD148B0124CCB59D00DAF3A2 /* LoginViewContraints.swift */,
 			);
 			path = Constraints;
+			sourceTree = "<group>";
+		};
+		CD148B0524CD11DE00DAF3A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD148B0624CD11EC00DAF3A2 /* FirebaseUser.swift */,
+				CD148B0824CD127400DAF3A2 /* Constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD148B0A24CD1F8B00DAF3A2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CD148B0B24CD1F9A00DAF3A2 /* HelperFunction.swift */,
+				CD148B0D24CD204300DAF3A2 /* FCollectionReference.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +219,7 @@
 			files = (
 				CD148AF424CCA7FC00DAF3A2 /* LaunchScreen.storyboard in Resources */,
 				CD148AF124CCA7FC00DAF3A2 /* Assets.xcassets in Resources */,
+				CD148B0424CD0D6D00DAF3A2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,11 +272,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD148B0E24CD204300DAF3A2 /* FCollectionReference.swift in Sources */,
 				CD148AEC24CCA7F700DAF3A2 /* LoginVC.swift in Sources */,
 				CD148AE824CCA7F700DAF3A2 /* AppDelegate.swift in Sources */,
 				CD148B0224CCB59D00DAF3A2 /* LoginViewContraints.swift in Sources */,
 				CD148AFE24CCB51700DAF3A2 /* LoginView.swift in Sources */,
+				CD148B0924CD127400DAF3A2 /* Constants.swift in Sources */,
+				CD148B0C24CD1F9A00DAF3A2 /* HelperFunction.swift in Sources */,
 				CD148AEA24CCA7F700DAF3A2 /* SceneDelegate.swift in Sources */,
+				CD148B0724CD11EC00DAF3A2 /* FirebaseUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

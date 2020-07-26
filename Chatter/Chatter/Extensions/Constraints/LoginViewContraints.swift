@@ -38,31 +38,25 @@ extension LoginView {
         descriptionLabel.widthAnchor.constraint(equalTo: safeAreaLayoutGuide.widthAnchor, multiplier: 0.7).isActive = true
                 descriptionLabel.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.4).isActive = true
         
-        // Username Field Constraints
         
-        usernameField.translatesAutoresizingMaskIntoConstraints = false
-        usernameField.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 315).isActive = true
-        usernameField.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
-        usernameField.widthAnchor.constraint(equalTo: safeAreaLayoutGuide.widthAnchor, multiplier: 0.5).isActive = true
-        usernameField.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.04).isActive = true
         
         
         // Username Label Constraints
         
         usernameFieldLabel.translatesAutoresizingMaskIntoConstraints = false
-        usernameFieldLabel.bottomAnchor.constraint(equalTo: usernameField.topAnchor, constant: -5).isActive = true
+        usernameFieldLabel.topAnchor.constraint(equalTo: descriptionLabel.topAnchor, constant: 200).isActive = true
         usernameFieldLabel.leftAnchor.constraint(equalTo: usernameField.leftAnchor).isActive = true
         usernameFieldLabel.widthAnchor.constraint(equalTo: usernameField.widthAnchor).isActive = true
         usernameFieldLabel.heightAnchor.constraint(equalTo: usernameField.heightAnchor).isActive = true
+        
+        // Username Field Constraints
+        
+        usernameField.translatesAutoresizingMaskIntoConstraints = false
+        usernameField.topAnchor.constraint(equalTo: usernameFieldLabel.bottomAnchor, constant: 5).isActive = true
+        usernameField.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
+        usernameField.widthAnchor.constraint(equalTo: safeAreaLayoutGuide.widthAnchor, multiplier: 0.5).isActive = true
+        usernameField.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.04).isActive = true
 
-        
-        // Password Field Constraints
-        
-        passwordField.translatesAutoresizingMaskIntoConstraints = false
-        passwordField.topAnchor.constraint(equalTo: passwordFieldLabel.bottomAnchor, constant: 5).isActive = true
-        passwordField.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
-        passwordField.widthAnchor.constraint(equalTo: safeAreaLayoutGuide.widthAnchor, multiplier: 0.5).isActive = true
-        passwordField.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.04).isActive = true
         
         // Password Label Constraints
         
@@ -71,6 +65,14 @@ extension LoginView {
         passwordFieldLabel.leftAnchor.constraint(equalTo: passwordField.leftAnchor).isActive = true
         passwordFieldLabel.widthAnchor.constraint(equalTo: passwordField.widthAnchor).isActive = true
         passwordFieldLabel.heightAnchor.constraint(equalTo: passwordField.heightAnchor).isActive = true
+        
+        // Password Field Constraints
+        
+        passwordField.translatesAutoresizingMaskIntoConstraints = false
+        passwordField.topAnchor.constraint(equalTo: passwordFieldLabel.bottomAnchor, constant: 5).isActive = true
+        passwordField.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
+        passwordField.widthAnchor.constraint(equalTo: safeAreaLayoutGuide.widthAnchor, multiplier: 0.5).isActive = true
+        passwordField.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.04).isActive = true
         
         // Login Button Constraints
         
